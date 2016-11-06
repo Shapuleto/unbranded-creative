@@ -1,0 +1,13 @@
+Database name		wp-ucw-dev-01
+Database username	shapu-ucw-adm
+Database password	vr4stfdB2nQjBNSF
+Database host		localhost
+Table prefix		wp_ucw_
+
+Site Title		Unbranded Creative
+Username		sh-ucw-wp-adm
+Password		lIchQZ33U0#ItGpiAL
+e-mail			shapuleto@gmail.com
+Privacy			na
+
+	<---

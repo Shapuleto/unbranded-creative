@@ -1,0 +1,215 @@
+/*
+	Theme Name:	Kyma Child
+	Theme URI:		
+	Description:	This is a custom child theme I have created.
+	Author:			Oscar Chavez
+	URI:					
+	Template:		kyma
+	Version:			0.1 
+*/
+@import url(../kyma/style.css);
+@import url(./css/ccf.css);
+
+/* Start	- Body */
+html, body, header, nav, article, aside, div, span, p {
+	font-family: Garamond !important;
+}
+#navy > li > a > span,
+.typo-title,
+.typo-title-link{
+	font-family: Helvetica !important;
+}
+/* End		- Body */
+/* Start	- Header */
+header {
+	background: transparent !important;
+	height: 58px;
+	position: fixed;
+	top: 0;
+	-webkit-transition: top 0.2s ease-in-out;
+	-moz-transition: top 0.2s ease-in-out;
+	-o-transition: top 0.2s ease-in-out;
+	transition: top 0.2s ease-in-out;
+	width: 100%;
+	z-index: 1;
+}
+.nav-up {
+	top: -75px;
+}
+header.rolling div#navigation_bar{
+/*	background: #f2eeee !important;*/
+}
+div#navigation_bar,
+.light_header div#navigation_bar {
+	border-bottom: none;
+	max-height: 60px;
+}
+div#logo {
+	margin-right: 0;
+	padding-left: 0;
+}
+div#logo a h3 {
+	font-family: Courgette, "Comic Sans MS", cursive, sans-serif;
+	margin-left: 10px;
+	color: #FFF;
+}
+nav#main_nav {
+	padding-right: 0;
+}
+#navy > li > a {
+	color: #FFF;
+}
+#navy > li > a {
+	background: #FFF;
+	margin-right: 0px !important;
+}
+#navy > li:last-child > a {
+	margin-right: 10px !important;
+}
+.menu_button_mode:not(.header_on_side) #navy > li > a {
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-ms-border-radius: 0px;
+	-o-border-radius: 0px;
+	border-radius: 0px;
+	background: transparent;
+}
+.menu_button_mode:not(.header_on_side) #navy > li:first-child > a{
+/*	border-radius: 3px 0 0 3px;*/
+}
+.menu_button_mode:not(.header_on_side) #navy > li:last-child > a{
+/*	border-radius: 0 3px 3px 0;*/
+}
+.menu_button_mode:not(.header_on_side) #navy > li.current_page_item > a,
+.menu_button_mode:not(.header_on_side) #navy > li.current_page_item:hover > a {
+	background: transparent !important;
+	border-radius: 3px;
+	color: #1ccdca !important;
+}
+div.jumbotron {
+	text-align: center;
+	padding: 0 0;
+}
+/* End		- Header */
+
+/* Start	- Body */
+.cont-95 {
+	margin: 0 auto;
+	width: 95%;
+	background: transparent;
+}
+.cont-90 {
+	margin: 0 auto;
+	width: 90%;
+}
+.cont-85 {
+	margin: 0 auto;
+	width: 85%;
+}
+.cont-80 {
+	margin: 0 auto;
+	width: 80%;
+}
+.cont-50 {
+	margin: 0 auto;
+	width: 50%;
+}
+article img{
+	padding-bottom: 20px;
+}
+article p{
+	padding-top: 20px;
+	padding-bottom: 0;
+}
+hr{padding: 0;}
+.main_title {
+	padding-bottom: 40px;
+}
+.typo-title,
+.work-title a{
+	font-size: 27px !important;
+	text-transform: uppercase;
+	font-weight: bold !important;
+	/*font-family: "Oswald", "Open Sans", sans-serif;*/
+	color: #576162;
+}
+.internal_post_con.clearfix {
+	padding-top: 0px;
+}
+/* End		- Body */
+/* Start	- Journal Single Post */
+div.jumbotron.journal-single {
+	padding-top: 122px;
+	background: #FFF;
+}
+/* End		- Journal Single Post */
+/* Start	- Footer */
+footer .footer_copy_text {
+	min-height: 39px;
+	line-height: 39px;
+}
+ul#menu-main-menu {
+	padding-right: 10px;
+}
+/* End		- Footer */
+
+/* Start	- Journal lists Section */
+#container-journal {
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.item {
+	width: 475px;
+	margin: 0;
+	float: left;
+}
+/* End		- Journal lists Section */
+.blog_grid_block.col-xs-12.col-sm-4{
+	margin: 0;
+}
+.blog_grid_block.item.col-xs-12.col-sm-4 {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.hm_blog_list .blog_grid_con .meta, .post_title_con .meta {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.hm_blog_list .blog_grid_block:not(:last-child) {
+	border-bottom: none;
+	padding-bottom: 30px;
+}
+.hm_blog_list .blog_grid_block {
+	margin: 0px;
+	padding: 0;
+}
+/* Start	- Us Section */
+.post.category-us:nth-child(odd) .blog_grid_con div div:first-child{
+	float: right;
+}
+/* End		- Us Section */
+/* Start	- Media Queries - Menu */
+@media only screen and (min-width: 992px)
+.menu_button_mode:not(.header_on_side) #navy > li > a {
+	/*margin-right: 0px !important;*/
+}
+/* End		- Media Queries - Menu */
+/* Start	- Single Journal post */
+.journal-view-more{
+	text-align: right;
+	padding: 15px 0 0 0;
+}
+/* End		- Single Journal post */
+/* */
+.parent {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+}
+.parent .child {
+	flex: 1;
+	max-width: 50%;
+}

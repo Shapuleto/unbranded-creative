@@ -1,0 +1,39 @@
+/*
+ * Custom CSS for the plugin:
+ * Custom Contact Forms
+ *
+*/
+/* Start	- Contact form Section */
+.contact-form-row{
+	background: #abc;
+}
+.form-id-124 .field {
+	margin-bottom: 0px;
+}
+.form-id-124 .field label{
+	float: left;
+	margin: 10px 0;
+	width: 15%;
+	text-align: left;
+	margin-left: 50%;
+}
+.ccf-form-wrapper .field select, .form-id-124 select, .form-id-124 form .field input[type=text], .form-id-124 form .field textarea, .form-id-124 form .field input[type=file]{
+	float: right;
+	width: 35%;
+	margin: 10px 0;
+}
+.form-id-124 form input[type="button"], input[type="reset"], input[type="submit"] {
+	width: 50%;
+	float: right;
+}
+.ccf-form-wrapper .field-description {
+	font-size: 85%;
+	clear: left;
+	margin-top: 6px;
+	float: right;
+	width: 70%;
+}
+.ccf-form-wrapper .form-title, .heading, .subheading {
+	text-align: left;
+}
+/* End		- Contact form Section */

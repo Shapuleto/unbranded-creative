@@ -1,0 +1,54 @@
+
+.nav-container {
+	max-width: inherit;
+}
+
+.image-logo {
+	max-width: 50vmin;
+}
+
+.team .image-tile .fun,
+.team .image-tile:hover .serious
+ {
+	display: none;
+}
+
+.team .image-tile:hover .fun {
+	display: inherit;
+}
+
+.image-tile img {
+	/*-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);*/
+}
+
+.image-tile:hover img {
+	-webkit-filter: none;
+	filter: none;
+}
+
+
+.image-bg h1, .image-bg p, .image-bg span, .image-bg li {
+	/*text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);*/
+}
+
+section.bg-primary, 
+section.team {
+	padding: 40px;
+}
+
+.container .project {
+	padding: 0 5px;
+}
+
+.container .masonry-item {
+	margin-bottom: 10px;
+}
+
+.project .image-tile {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.image-square > .content {
+	padding: 0 5%;
+}
