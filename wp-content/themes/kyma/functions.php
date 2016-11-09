@@ -2,8 +2,6 @@
 /** Theme Name: Kyma
  *  Theme Core Functions and Codes
  **/
-define('HEADER_IMAGE_WIDTH', apply_filters('kyma_header_image_width', 1168));
-define('HEADER_IMAGE_HEIGHT', apply_filters('kyma_header_image_height', 75));
 require get_template_directory() . '/functions/menu/default_menu_walker.php';
 require get_template_directory() . '/functions/menu/kyma_nav_walker.php';
 require_once dirname(__FILE__) . '/default_options.php';
@@ -60,7 +58,10 @@ function kyma_theme_setup()
     add_editor_style(get_stylesheet_uri());
     $args = array('default-color' => '#ffffff');
     add_theme_support('custom-background', $args);
-    add_theme_support('custom-header');
+    add_theme_support( 'custom-header', array(
+		'width'         => 1168,
+		'height'        => 75,
+	) );
     add_theme_support('automatic-feed-links');
     add_theme_support('woocommerce');
     add_theme_support('title-tag');

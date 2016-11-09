@@ -1,7 +1,7 @@
 <!-- Start	- Work Feauterd Image -->
 <section class="content_section">
 	<div class="content-fluid">
-		<div class="jumbotron journal-single">
+		<div class="jumbotron journal-single cont-50">
 			<?php
 			$post_id = get_the_id();
 			?>
@@ -17,7 +17,7 @@
 </section><!-- End		- Work Feauterd Image -->
 <!-- Start - Single Post Display - journal category -->
 <section class="content_section">
-	<div class="clearfix ">
+	<div class="content-fluid">
 		<?php
 		if (have_posts()):
 			while (have_posts()): the_post(); ?>

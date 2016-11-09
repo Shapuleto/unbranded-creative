@@ -1,3 +1,6 @@
+###Verision 1.9
+* Remove unused tag.
+* Add theme support "Custom-Header".
 ###Verision 1.8
 * Date format issue fixed.
 * HTML formating issue fixed Like: list, table etc.

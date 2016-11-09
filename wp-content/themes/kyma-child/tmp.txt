@@ -1,8 +1,0 @@
-[simple-sitemap types="post, page, journal" show_label="true" ilnks="true" page_depth="1" order="asc" order_by="title" exclude="591"]
-
-Clabe			012 760 01286543324 8
-numero cuenta		1286543324
-nombre beneficiario	Jose Fidel Chavez Lara
-correo			chavez.oe@gmail.com
-
-	<---

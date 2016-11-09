@@ -1,0 +1,113 @@
+0000.062 (0) Opened log file at time: Wed, 09 Nov 2016 11:19:56 +0000 on http://localhost/wp-dev/wp-dev-uc-01
+0000.113 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.12.23 WP: 4.6.1 PHP: 5.5.12 (apache2handler, Windows NT DESKTOP-21DKHEL 6.2 build 9200 (Windows 8 Home Premium Edition) i586) MySQL: 5.6.17 WPLANG: en_US Server: Apache/2.4.9 (Win32) PHP/5.5.12 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 26.6M | 27M) multisite: N openssl: OpenSSL 1.0.1g 7 Apr 2014 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.167 (0) Free space on disk containing Updraft's temporary directory: 44740.8 MB
+0000.271 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.467 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.792 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1478593122, seconds_ago=97274)
+0001.266 (0) Set semaphore last lock (fd) time to 2016-11-09 11:19:57
+0001.442 (0) Semaphore lock (fd) complete
+0001.735 (0) Backup run: resumption=0, nonce=c088a76a0453, begun at=1478690396 (2s ago), job type=backup
+0001.844 (0) Scheduling a resumption (1) after 300 seconds (1478690698) in case this run gets aborted
+0002.023 (0) Checking if we have a zip executable available
+0002.180 (0) Creation of backups of directories: beginning
+0002.296 (0) No backup of plugins: excluded by user's options
+0002.344 (0) No backup of themes: excluded by user's options
+0002.389 (0) No backup of uploads: excluded by user's options
+0002.433 (0) No backup of others: excluded by user's options
+0002.728 (0) Saving backup status to database (elements: 0)
+0003.635 (0) Beginning creation of database dump (WordPress DB)
+0005.174 (0) Table wp_ucw_options: Total expected rows (approximate): 2913
+0005.373 (0) Table wp_ucw_options: Total rows added: 320 in 0.13 seconds
+0005.479 (0) Table wp_ucw_options: finishing file (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_options.table.gz - 134.7 KB)
+0005.780 (0) Table wp_ucw_users: Total expected rows (approximate): 4
+0005.859 (0) Table wp_ucw_users: Total rows added: 4 in 0.01 seconds
+0006.130 (0) Table wp_ucw_users: finishing file (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_users.table.gz - 0.8 KB)
+0006.418 (0) Table wp_ucw_usermeta: Total expected rows (approximate): 74
+0006.490 (0) Table wp_ucw_usermeta: Total rows added: 74 in 0.01 seconds
+0006.643 (0) Table wp_ucw_usermeta: finishing file (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_usermeta.table.gz - 2.4 KB)
+0006.845 (0) Table wp_ucw_commentmeta: Total expected rows (approximate): 0
+0006.909 (0) Table wp_ucw_commentmeta: Total rows added: 0 in 0.01 seconds
+0007.030 (0) Table wp_ucw_commentmeta: finishing file (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_commentmeta.table.gz - 0.4 KB)
+0007.403 (0) Table wp_ucw_comments: Total expected rows (approximate): 1
+0007.482 (0) Table wp_ucw_comments: Total rows added: 0 in 0.01 seconds
+0007.627 (0) Table wp_ucw_comments: finishing file (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_comments.table.gz - 0.5 KB)
+0008.183 (0) Table wp_ucw_links: Total expected rows (approximate): 0
+0008.523 (0) Table wp_ucw_links: Total rows added: 0 in 0.20 seconds
+0008.614 (0) Table wp_ucw_links: finishing file (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_links.table.gz - 0.4 KB)
+0008.929 (0) Table wp_ucw_postmeta: Total expected rows (approximate): 390
+0009.221 (0) Table wp_ucw_postmeta: Total rows added: 487 in 0.08 seconds
+0009.457 (0) Table wp_ucw_postmeta: finishing file (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_postmeta.table.gz - 19.7 KB)
+0010.108 (0) Table wp_ucw_posts: Total expected rows (approximate): 552
+0010.668 (0) Table wp_ucw_posts: Total rows added: 526 in 0.46 seconds
+0010.816 (0) Table wp_ucw_posts: finishing file (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_posts.table.gz - 34.9 KB)
+0011.273 (0) Table wp_ucw_term_relationships: Total expected rows (approximate): 41
+0011.367 (0) Table wp_ucw_term_relationships: Total rows added: 41 in 0.01 seconds
+0011.489 (0) Table wp_ucw_term_relationships: finishing file (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_term_relationships.table.gz - 0.5 KB)
+0011.920 (0) Table wp_ucw_term_taxonomy: Total expected rows (approximate): 9
+0011.978 (0) Table wp_ucw_term_taxonomy: Total rows added: 8 in 0.01 seconds
+0012.047 (0) Table wp_ucw_term_taxonomy: finishing file (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_term_taxonomy.table.gz - 0.7 KB)
+0012.229 (0) Table wp_ucw_termmeta: Total expected rows (approximate): 0
+0012.288 (0) Table wp_ucw_termmeta: Total rows added: 0 in 0.01 seconds
+0012.359 (0) Table wp_ucw_termmeta: finishing file (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_termmeta.table.gz - 0.4 KB)
+0012.580 (0) Table wp_ucw_terms: Total expected rows (approximate): 8
+0012.637 (0) Table wp_ucw_terms: Total rows added: 8 in 0.01 seconds
+0012.707 (0) Table wp_ucw_terms: finishing file (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_terms.table.gz - 0.5 KB)
+0012.991 (0) Skipping table (lacks our prefix (wp_ucw_)): updraft_tmp_3202514d7e142636f5e18c392a4e24e1d619ed4
+0013.112 (0) Skipping table (lacks our prefix (wp_ucw_)): updraft_tmp_396728af70ce253c73fdfcad994d957bea954c
+0013.303 (0) Skipping table (lacks our prefix (wp_ucw_)): updraft_tmp_41955563859dd8a59d98341dc29c7bb26e43d8d
+0013.387 (0) Skipping table (lacks our prefix (wp_ucw_)): updraft_tmp_56842048e75c7ad4a40837156fdab0ae0703a14
+0013.433 (0) Skipping table (lacks our prefix (wp_ucw_)): updraft_tmp_5926513d8bc73d898075e94c49448463e8a7c2d
+0013.491 (0) Skipping table (lacks our prefix (wp_ucw_)): updraft_tmp_62127685bf97a48ec75ba42b75e42cd5ea23079
+0013.533 (0) Skipping table (lacks our prefix (wp_ucw_)): updraft_tmp_8074645a3df7957af6700884fbec3b828d33108
+0013.647 (0) Table wp_ucw_stream: Total expected rows (approximate): 2161
+0014.257 (0) Table wp_ucw_stream: Total rows added: 2161 in 0.55 seconds
+0014.660 (0) Table wp_ucw_stream: finishing file (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_stream.table.gz - 24.5 KB)
+0015.099 (0) Table wp_ucw_stream_meta: Total expected rows (approximate): 14014
+0016.298 (0) Table wp_ucw_stream_meta: Total rows added: 14014 in 1.14 seconds
+0016.581 (0) Table wp_ucw_stream_meta: finishing file (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_stream_meta.table.gz - 114.3 KB)
+0016.747 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_options.table.gz (1/21): adding to final database dump
+0016.956 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_users.table.gz (2/21): adding to final database dump
+0017.023 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_usermeta.table.gz (3/21): adding to final database dump
+0017.119 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_commentmeta.table.gz (4/21): adding to final database dump
+0017.204 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_comments.table.gz (5/21): adding to final database dump
+0017.357 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_links.table.gz (6/21): adding to final database dump
+0017.482 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_postmeta.table.gz (7/21): adding to final database dump
+0017.698 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_posts.table.gz (8/21): adding to final database dump
+0017.881 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_term_relationships.table.gz (9/21): adding to final database dump
+0017.988 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_term_taxonomy.table.gz (10/21): adding to final database dump
+0018.181 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_termmeta.table.gz (11/21): adding to final database dump
+0018.289 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_terms.table.gz (12/21): adding to final database dump
+0018.324 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_stream.table.gz (13/21): adding to final database dump
+0018.427 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db-table-wp_ucw_stream_meta.table.gz (14/21): adding to final database dump
+0018.857 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db.gz: finished writing out complete database file (312 KB)
+0019.207 (0) Total database tables backed up: 14 (backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db.gz, size: 340255, checksum (SHA1): ba9d0bb447663af21d55bf9602cc70f4dc5323f5)
+0019.480 (0) backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db.gz: db: This file has not yet been successfully uploaded: will queue
+0019.553 (0) Saving backup history. Total backup size: 332.3 KB
+0019.727 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0019.970 (0) Cloud backup selection (1/1):  (last)
+0020.112 (0) No remote despatch: user chose no remote backup service
+0020.383 (0) Recording as successfully uploaded: backup_2016-11-09-1819_Unbranded_Creative_c088a76a0453-db.gz (b88a3faa5382c3279079749e5d4f9ba4)
+0020.854 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=1, retain_db=1
+0020.928 (0) Number of backup sets in history: 3; groups (db): 1
+0021.002 (0) Examining (for databases) backup set with group_id=0, nonce=c088a76a0453, datestamp=1478690396 (Nov 09 2016 11:19:56)
+0021.081 (0) This backup set is the backup set just made, so will not be deleted.
+0021.143 (0) Examining (for databases) backup set with group_id=0, nonce=c15768d780ba, datestamp=1478593121 (Nov 08 2016 08:18:41)
+0021.209 (0) 1478593121: db: this set includes a database (backup_2016-11-08-1518_Unbranded_Creative_c15768d780ba-db.gz); db count is now 1
+0021.281 (0) 1478593121: db: over retain limit (1); will delete this database
+0021.396 (0) Delete file: backup_2016-11-08-1518_Unbranded_Creative_c15768d780ba-db.gz, service=none
+0021.530 (0) Deleting local copy (backup_2016-11-08-1518_Unbranded_Creative_c15768d780ba-db.gz)
+0021.653 (0) This backup set is now empty; will remove from history
+0021.750 (0) Deleting log file (log.c15768d780ba.txt)
+0021.849 (0) Examining (for databases) backup set with group_id=0, nonce=a4a703b25cb1, datestamp=1478163944 (Nov 03 2016 09:05:44)
+0021.891 (0) Number of backup sets in history: 2; groups (files): 1
+0021.936 (0) Examining (for files) backup set with nonce=c088a76a0453, datestamp=1478690396 (Nov 09 2016 11:19:56)
+0021.992 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0022.047 (0) Examining (for files) backup set with nonce=a4a703b25cb1, datestamp=1478163944 (Nov 03 2016 09:05:44)
+0022.115 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0022.214 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0022.497 (0) Resume backup (c088a76a0453, 0): finish run
+0022.676 (0) Decremented the semaphore (fd) by 1
+0023.020 (0) Semaphore (fd) unlocked
+0023.165 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0023.556 (0) No email will/can be sent - the user has not configured an email address.
+0023.603 (0) The backup apparently succeeded and is now complete
