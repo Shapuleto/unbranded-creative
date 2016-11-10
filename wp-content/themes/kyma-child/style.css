@@ -163,6 +163,7 @@ ul#menu-main-menu {
 	margin: 0;
 	float: left;
 }
+
 /* End		- Journal lists Section */
 .blog_grid_block.col-xs-12.col-sm-4{
 	margin: 0;
@@ -213,6 +214,7 @@ ul#menu-main-menu {
 	flex: 1;
 	max-width: 50%;
 }
+/* */
 /* Start	- Single Work (case study) Post prev & next buttons */
 #work-prev-next{
 	position: fixed;
@@ -234,3 +236,16 @@ ul#menu-main-menu {
 	opacity: 1;
 }
 /* End		- Single Work (case study) Post prev & next buttons */
+/* Start	- Author Posts' List */
+#author-post-list .content.row_spacer {
+    padding-bottom: 0;
+}
+#author-post-list .main_title.centered.upper {
+    padding-bottom: 0;
+}
+#author-post-list h2.typo-title {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+/* End		- Author Posts' List */
+

@@ -1,4 +1,19 @@
 <?php /* Template name: Blog-Journal */ ?>
+<?php
+if(is_author()):
+?>
+<section id="author-post-list" class="content_section">
+	<div class="content row_spacer">
+		<div class="main_title centered upper">
+			<h2 class="typo-title">
+				<?php the_archive_title(); ?>
+			</h2>
+		</div>
+	</div>
+</section>
+<?php
+endif;
+?>
 <section class="content_section">
 	<div class="content-fluid">
 		<div class="cont-90">

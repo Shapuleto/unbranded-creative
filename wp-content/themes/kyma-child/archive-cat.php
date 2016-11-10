@@ -1,5 +1,3 @@
-<?php get_header(); ?>
-<!-- Our Blog Grids -->
 <section class="content_section">
 	<div class="content row_spacer">
 		<div class="main_title centered upper">
@@ -26,5 +24,3 @@
 		<!-- End		-	Author Posts Content -->
 	</div>
 </section>
-<!-- End Our Blog Grids -->
-<?php get_footer(); ?>
