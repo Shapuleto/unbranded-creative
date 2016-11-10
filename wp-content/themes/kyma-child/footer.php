@@ -11,7 +11,6 @@ $col = 12 / (int)$kyma_theme_options['footer_layout']; ?>
 				</span>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 clearfix">
-				<?php echo do_shortcode('[html_sitemap]'); ?>
 				<?php wp_nav_menu(array(
 					'theme_location'	=> 'secondary',
 					'container'				=> false,
@@ -19,73 +18,76 @@ $col = 12 / (int)$kyma_theme_options['footer_layout']; ?>
 					'link_before'			=> '<span>',
 					'link_after'			=> '</span>',
 				)); ?>
+				<!-- Start	- Sitemap -->
+				<ul id="menu-sitemap-menu" class="clearfix footer_menu"><li><a href="<?php echo home_url('/wp-custom-sitemap/'); ?>"><span>Sitemap</span></a></li></ul>
+				<!-- End		- Sitemap -->
 			</div>
 		</div>
 	</div>
 </footer>
 <!-- End footer -->
 <a href="#0" class="hm_go_top"></a>
-</div>
-<!-- End wrapper -->
+</div><!-- End wrapper -->
 <?php wp_footer();
 if($kyma_theme_options['custom_css']!=""){
-    echo '<style>'.$kyma_theme_options['custom_css'].'</style>';
+	echo '<style>'.$kyma_theme_options['custom_css'].'</style>';
 }
 ?>
+<!-- Start	- Hide Header on on scroll down -->
 <script type="text/javascript">
-jQuery(document).ready(function($) {
-	// Hide Header on on scroll down
-	var didScroll;
-	var lastScrollTop = 0;
-	var delta = 5;
-	var navbarHeight = $('header').outerHeight();
-	var jumbotronHeight = $('.jumbotron.home').outerHeight();
-	// on scroll, let the interval function know the user has scrolled
-	$(window).scroll(function(event){
-	  didScroll = true;
+	jQuery(document).ready(function($) {
+		var didScroll;
+		var lastScrollTop = 0;
+		var delta = 5;
+		var navbarHeight = $('header').outerHeight();
+		var jumbotronHeight = $('.jumbotron.home').outerHeight();
+		// on scroll, let the interval function know the user has scrolled
+		$(window).scroll(function(event){
+			didScroll = true;
+		});
+		// run hasScrolled() and reset didScroll status
+
+		setInterval(function() {
+			if (didScroll) {
+				hasScrolled();
+				didScroll = false;
+			}
+		}, 250);
+
+		function hasScrolled() {
+			var st = $(this).scrollTop();
+			
+			// Make sure they scroll more than delta
+			if(Math.abs(lastScrollTop - st) <= delta)
+					return;
+
+			// If they scrolled down and are past the navbar, add class .nav-up.
+			// This is necessary so you never see what is "behind" the navbar.
+			if (st > lastScrollTop && st > navbarHeight){
+				// Scroll Down
+				// alert("down");
+				$('header').removeClass('nav-down rolling').addClass('nav-up');
+			} else {
+				// Scroll Up
+				if(st + $(window).height() < $(document).height()) {
+				// alert("up");
+					$('header').removeClass('nav-up').addClass('nav-down rolling');
+				}
+			}
+			lastScrollTop = st;
+			if($(window).scrollTop() === 0) {
+				$('header').removeClass('nav-down rolling');
+			}
+			if(document.getElementById("section_work") !== null){
+				if(st >= jumbotronHeight){
+					$('nav ul#navy li:first-child').addClass('current_page_item');
+				}else{
+					$('nav ul#navy li:first-child').removeClass('current_page_item');
+				}
+			}
+		}
 	});
-	// run hasScrolled() and reset didScroll status
-
-	setInterval(function() {
-	  if (didScroll) {
-	    hasScrolled();
-	    didScroll = false;
-	  }
-	}, 250);
-
-	function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-			// Scroll Down
-			// alert("down");
-			$('header').removeClass('nav-down rolling').addClass('nav-up');
-    } else {
-			// Scroll Up
-			if(st + $(window).height() < $(document).height()) {
-			// alert("up");
-				$('header').removeClass('nav-up').addClass('nav-down rolling');
-			}
-    }
-    lastScrollTop = st;
-		if($(window).scrollTop() === 0) {
-			$('header').removeClass('nav-down rolling');
-		}
-		if(document.getElementById("section_work") !== null){
-			if(st >= jumbotronHeight){
-				$('nav ul#navy li:first-child').addClass('current_page_item');
-			}else{
-				$('nav ul#navy li:first-child').removeClass('current_page_item');
-			}
-		}
-	}
-});
 </script>
+<!-- End		- Hide Header on on scroll down -->
 	</body>
 </html>
