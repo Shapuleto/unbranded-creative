@@ -26,7 +26,7 @@
 				<div id="<?php echo get_the_id(); ?>" <?php post_class('clearfix'); ?> >
 					<div class="post_title_con col-xs-12 col-sm-6">
 						<h6 class="title typo-title">
-<!--							<a href="<?php the_permalink(); ?>"><?php //the_title(); ?></a>-->
+							<!-- <a href="<?php the_permalink(); ?>"><?php //the_title(); ?></a> -->
 							<?php the_title(); ?>
 						</h6>
 					</div>
@@ -41,14 +41,65 @@
 				<div class="col-xs-12 col-sm-12">
 					<?php the_content(); ?>
 				</div>
+				<!-- Next and Prev Post-->
+				<div id="work-prev-next">
+					<div class="post_next_prev_con clearfix">
+						<div class="post_next_prev clearfix">
+							<span class="pull-left">
+							<?php next_post_link('%link', '<i class="fa fa-long-arrow-left"></i><span class="t">' . __('Prev', 'kyma') . '</span>'); ?>
+							</span>
+							<span class="pull-right">
+							<?php previous_post_link('%link', '<span class="t">' . __('Next', 'kyma') . '</span><i class="fa fa-long-arrow-right"></i>'); ?>
+							</span>
+						</div>
+					</div>
+				</div>
+				<script>
+				jQuery(document).ready(function($) {
+					var move = true;
+					var timeout = null;
+
+					// Verify if the mouse is moving
+					$("body").mousemove(function(event) {
+						clearTimeout(timeout);
+
+						timeout = setTimeout(function() {
+							// console.log('Mouse idle for 3 sec');
+						}, 3000);
+
+						if(move){
+							var pageCoords		= "( " + event.pageX		+ ", " + event.pageY		+ " )";
+							var clientCoords	= "( " + event.clientX	+ ", " + event.clientY	+ " )";
+							if(event.pageY != event.clientY){
+								$("#work-prev-next .post_next_prev a span.t").animate({opacity: 1}, 500);
+								move = false;
+								// console.log("move: " + move + " Coords: " + pageCoords + " : " + clientCoords);
+							}
+						}
+					}).on('mousestop', function() {
+						if($('span.t:hover').length != 0) {
+							// console.log("hover");
+						}else{
+							if(!move){
+								$("#work-prev-next .post_next_prev a span.t").animate({opacity: 0}, 1500);
+								move = true;
+								console.log("move: " + move + " not hover");
+							}
+						}
+					});
+				});
+				</script>
+				<!-- End Next and Prev Post-->
 			</div>
-		</div><?php
+		</div>
+			<?php
 			endwhile;
-		endif;?>
+		endif;
+		?>
 	</div>
 </section><!-- End	 - Single Post Display - work category -->
 <!-- Start - Testimonials carousel -->
-<section>
+<section class="content_section">
 	<div class="content-fluid">
 		<article class="cont-95">
 			<div class="row row-content">
@@ -61,29 +112,3 @@
 		</article>
 	</div>
 </section><!-- End - Testimonials carousel -->
-<!-- Start	- About the author -->
-<section class="content_section">
-	<div  class="cont-50">
-		<div class="about_auther">
-			<div class="small_title">
-				<span class="small_title_con">
-					<span class="s_icon"><i class="fa fa-user"></i></span>
-				<span class="s_text"><?php echo esc_attr($kyma_theme_options['about_author_text']); ?></span>
-				</span>
-			</div>
-			<div class="about_auther_con clearfix">
-				<span class="avatar_img">
-					<a href="<?php the_permalink(); ?>"><?php echo get_avatar(get_the_author_meta('ID'), 126); ?></a>
-				</span>
-				<div class="about_auther_details">
-					<div class="auther_link"><?php esc_attr(the_author()); ?></div>
-					<span class="desc"><?php esc_attr(the_author_meta('description')); ?></span>
-				</div>
-			</div>
-			<div class="journal-view-more">
-					<a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>" class="auther_link">View More</a>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End		- About the author -->

@@ -213,3 +213,24 @@ ul#menu-main-menu {
 	flex: 1;
 	max-width: 50%;
 }
+/* Start	- Single Work (case study) Post prev & next buttons */
+#work-prev-next{
+	position: fixed;
+	top: 40%;
+	width: 100%;
+	margin: 0 20px;
+}
+#work-prev-next .post_next_prev {
+	float: initial;
+}
+#work-prev-next .post_next_prev a span.t {
+	font-size: 50px;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+#work-prev-next .post_next_prev:hover a span.t {
+	opacity: 1;
+}
+/* End		- Single Work (case study) Post prev & next buttons */

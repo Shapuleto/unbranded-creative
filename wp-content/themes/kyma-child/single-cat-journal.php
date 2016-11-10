@@ -35,3 +35,29 @@
 		endif;?>
 	</div>
 </section><!-- End	 - Single Post Display - work category -->
+<!-- Start	- About the author -->
+<section class="content_section">
+	<div  class="cont-50">
+		<div class="about_auther">
+			<div class="small_title">
+				<span class="small_title_con">
+					<span class="s_icon"><i class="fa fa-user"></i></span>
+				<span class="s_text"><?php echo esc_attr($kyma_theme_options['about_author_text']); ?></span>
+				</span>
+			</div>
+			<div class="about_auther_con clearfix">
+				<span class="avatar_img">
+					<a href="<?php the_permalink(); ?>"><?php echo get_avatar(get_the_author_meta('ID'), 126); ?></a>
+				</span>
+				<div class="about_auther_details">
+					<div class="auther_link"><?php esc_attr(the_author()); ?></div>
+					<span class="desc"><?php esc_attr(the_author_meta('description')); ?></span>
+				</div>
+			</div>
+			<div class="journal-view-more">
+					<a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>" class="auther_link">View More</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End		- About the author -->
