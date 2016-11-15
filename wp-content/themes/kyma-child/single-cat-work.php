@@ -55,39 +55,39 @@
 					</div>
 				</div>
 				<script>
-					jQuery(document).ready(function($) {
-						var move = true;
-						var timeout = null;
+					// jQuery(document).ready(function($) {
+					// 	var move = true;
+					// 	var timeout = null;
 
-						// Verify if the mouse is moving
-						$("body").mousemove(function(event) {
-							clearTimeout(timeout);
+					// 	// Verify if the mouse is moving
+					// 	$("body").mousemove(function(event) {
+					// 		clearTimeout(timeout);
 
-							timeout = setTimeout(function() {
-								// console.log('Mouse idle for 3 sec');
-							}, 3000);
+					// 		timeout = setTimeout(function() {
+					// 			// console.log('Mouse idle for 3 sec');
+					// 		}, 3000);
 
-							if(move){
-								var pageCoords		= "( " + event.pageX		+ ", " + event.pageY		+ " )";
-								var clientCoords	= "( " + event.clientX	+ ", " + event.clientY	+ " )";
-								if(event.pageY != event.clientY){
-									$("#work-prev-next .post_next_prev a span.t").animate({opacity: 1}, 500);
-									move = false;
-									// console.log("move: " + move + " Coords: " + pageCoords + " : " + clientCoords);
-								}
-							}
-						}).on('mousestop', function() {
-							if($('span.t:hover').length != 0) {
-								// console.log("hover");
-							}else{
-								if(!move){
-									$("#work-prev-next .post_next_prev a span.t").animate({opacity: 0}, 1500);
-									move = true;
-									console.log("move: " + move + " not hover");
-								}
-							}
-						});
-					});
+					// 		if(move){
+					// 			var pageCoords		= "( " + event.pageX		+ ", " + event.pageY		+ " )";
+					// 			var clientCoords	= "( " + event.clientX	+ ", " + event.clientY	+ " )";
+					// 			if(event.pageY != event.clientY){
+					// 				$("#work-prev-next .post_next_prev a span.t").animate({opacity: 1}, 500);
+					// 				move = false;
+					// 				// console.log("move: " + move + " Coords: " + pageCoords + " : " + clientCoords);
+					// 			}
+					// 		}
+					// 	}).on('mousestop', function() {
+					// 		if($('span.t:hover').length != 0) {
+					// 			// console.log("hover");
+					// 		}else{
+					// 			if(!move){
+					// 				$("#work-prev-next .post_next_prev a span.t").animate({opacity: 0}, 1500);
+					// 				move = true;
+					// 				console.log("move: " + move + " not hover");
+					// 			}
+					// 		}
+					// 	});
+					// });
 				</script>
 				<!-- End Next and Prev Post-->
 			</div>

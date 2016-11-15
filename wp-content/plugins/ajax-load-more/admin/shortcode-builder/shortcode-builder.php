@@ -10,7 +10,7 @@
 
 
 <!-- Add-ons -->
-<?php if(alm_has_addon()) : ?>
+<?php if(alm_has_addon_shortcodes()) : ?>
 
 <div class="shortcode-parameter-wrap">   
    <h2 class="shortcode-title"><?php _e('Add-ons', 'ajax-load-more'); ?></h2>

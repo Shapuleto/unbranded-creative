@@ -4,7 +4,7 @@ Donate link: https://connekthq.com/donate/
 Tags: infinite scroll, infinite scrolling, scroll, infinite, lazy load, lazy loading, pagination, ajax pagination, ajax, ajax posts, ajax load posts, search, tags, category, post types, taxonomy, meta_query, woocommerce
 Requires at least: 3.6
 Tested up to: 4.7
-Stable tag: 2.13.0
+Stable tag: 2.13.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,7 @@ Ajax Load More is a powerful solution for infinite scrolling and lazy loading po
 
 Build complex custom WordPress queries using the Ajax Load More shortcode builder then add the generated shortcode to your page via the content editor or directly into your template files. 
 
-Ajax Load More is fully compatible with popular ecommerce plugins such as WooCommerce and Easy Digital Downloads.
+Ajax Load More is fully compatible with popular eCommerce plugins such as WooCommerce and Easy Digital Downloads.
 
 **[Get More Information](https://connekthq.com/plugins/ajax-load-more/)**
 
@@ -328,6 +328,12 @@ How to install Ajax Load More.
 
 
 == Changelog ==
+
+= 2.13.0.1 - November 10, 2016 =
+
+* FIX - almEmpty() callback function not firing because of updated return value of empty query.
+* FIX - almdebug() filter causing 'Missing argument 2 for apply_filters()' error for some users.
+* FIX - Shortcode builder UI heading update.
 
 = 2.13.0 - November 6, 2016 =
 

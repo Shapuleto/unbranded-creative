@@ -227,13 +227,19 @@ ul#menu-main-menu {
 }
 #work-prev-next .post_next_prev a span.t {
 	font-size: 50px;
+}
+#work-prev-next .post_next_prev a span.t.anim-out {
 	opacity: 0;
+	-webkit-transition: opacity 1.5s ease-in-out;
+	-moz-transition: opacity 1.5s ease-in-out;
+	transition: opacity 1.5s ease-in-out;
+}
+#work-prev-next .post_next_prev:hover a span.t,
+#work-prev-next .post_next_prev a span.t.anim-in {
+	opacity: 1;
 	-webkit-transition: opacity 0.5s ease-in-out;
 	-moz-transition: opacity 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out;
-}
-#work-prev-next .post_next_prev:hover a span.t {
-	opacity: 1;
 }
 /* End		- Single Work (case study) Post prev & next buttons */
 /* Start	- Author Posts' List */

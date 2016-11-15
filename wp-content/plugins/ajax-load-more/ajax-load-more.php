@@ -7,15 +7,15 @@ Text Domain: ajax-load-more
 Author: Darren Cooney
 Twitter: @KaptonKaos
 Author URI: http://connekthq.com
-Version: 2.13.0
+Version: 2.13.0.1
 License: GPL
 Copyright: Darren Cooney & Connekt Media
 
 */	  
 
    		
-define('ALM_VERSION', '2.13.0');
-define('ALM_RELEASE', 'November 6, 2016');
+define('ALM_VERSION', '2.13.0.1');
+define('ALM_RELEASE', 'November 10, 2016');
 define('ALM_STORE_URL', 'https://connekthq.com');	
 
 
@@ -734,7 +734,7 @@ if( !class_exists('AjaxLoadMore') ):
       	   	   	$alm_has_cta = true;
       			   } 
       			   
-	   					   					
+	   					   					  
 	            endwhile; wp_reset_query();
 	            
 	            // End ALM Loop	            
@@ -747,7 +747,17 @@ if( !class_exists('AjaxLoadMore') ):
    	            apply_filters('alm_cache_file', $cache_id, $page, $data);
    	         }   	         
    	         
-   	         $debug = (apply_filters('alm_debug')) ? $alm_query : false;
+   	         
+   	         
+   	         /*
+			   	 *	alm_debug
+			   	 *
+			   	 * ALM Core Filter Hook
+			   	 *
+			   	 * @return $alm_query/false;
+			   	 */
+   	         $debug = (apply_filters('alm_debug', false)) ? $alm_query : false;
+   	         
    	                  
    	         $return = array( 
                   'html' => $data,
@@ -764,8 +774,8 @@ if( !class_exists('AjaxLoadMore') ):
 	   		   $return = array(
                   'html' => null,
                   'meta' => array(
-                     'postcount'  => null,
-                     'totalposts' => null,
+                     'postcount'  => 0,
+                     'totalposts' => 0,
                      'debug'		 => null
                   )
                );               

@@ -41,9 +41,22 @@ if($kyma_theme_options['custom_css']!=""){
 		var delta = 5;
 		var navbarHeight = $('header').outerHeight();
 		var jumbotronHeight = $('.jumbotron.home').outerHeight();
+		var iO;
 		// on scroll, let the interval function know the user has scrolled
 		$(window).scroll(function(event){
 			didScroll = true;
+
+			// $("#work-prev-next .post_next_prev a span.t").show().delay(5000).queue(function(n) {
+			// 	$(this).hide(); n();
+			// });
+			$("#work-prev-next .post_next_prev a span.t").addClass('anim-in');
+			// if($('span.t:hover').length != 0) {
+			// console.log("hover");
+			// clearTimeout(iO);
+		// }else{
+				// console.log("not hover");
+				iO = setTimeout(function() { $("#work-prev-next .post_next_prev a span.t").removeClass('anim-in').addClass('anim-out'); }, 5000);
+			// }
 		});
 		// run hasScrolled() and reset didScroll status
 
